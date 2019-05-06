@@ -1,0 +1,11 @@
+@media (max-width: 1440px) {
+    main[role="main-home"] .container .row .card{
+        width: 500px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    main[role="main-home"] .container .row .card{
+        width: 100% !important;
+    }
+}
