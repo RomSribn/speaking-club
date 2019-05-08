@@ -12,8 +12,8 @@ body{
 /*===== Header ===*/
 
 header[role="header"] {
-    padding-top: 80px;
-    padding-bottom: 39px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 header[role="header"] .container>div#logo {
@@ -167,7 +167,7 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] {
 
 main[role="main-home"] article[role="pge-title-content"] header,
 main[role="main-inner-wrapper"] article[role="pge-title-content"] header {
-    padding-bottom: 19px;
+    /*padding-bottom: 19px;*/
     padding-top: 83px;
 }
 
@@ -177,11 +177,13 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] header div {
     line-height: 53px;
     color: #404040;
     font-weight: 800;
+    margin-bottom: 10px;
 }
 .contact-header header h2 span,
 main[role="main-home"] article[role="pge-title-content"] header div span,
 main[role="main-inner-wrapper"] article[role="pge-title-content"] header div span {
     display: block;
+    font-weight: 800;
     font-size: 80px;
     color: #fb5353;
     padding-bottom: 15px
@@ -207,6 +209,7 @@ main[role="main-home"] .container .row .card{
     border-radius: 7px;
     margin-right: 40px;
     margin-bottom: 40px;
+    transition: .3s;
 }
 div.card:last-child{
     margin-right: 0;
@@ -221,6 +224,42 @@ main[role="main-home"] .container .row .card-title{
     font-weight: 800;
 }
 
+main[role="main-home"] .container .row .card:hover{
+    transform: translateY(5%);
+    transition: .3s;
+}
+
+/*========Blog===========*/
+main[role="main-home"] .main-blog section{
+    float: left;
+    height: 100%;
+}
+.gal {
+
+
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+
+}
+.gal section{
+    width: 100%;
+    margin-right: 45px;
+}
+@media (max-width: 500px) {
+
+    .gal {
+
+
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+
+
+    }
+
+}
 /*==========Contact===============*/
 article[role="pge-title-content"].contact-header {
     padding-bottom: 218px
@@ -258,7 +297,6 @@ article[role="pge-title-content"].contact-header p a:hover {
 
 .contat-from-wrapper {
     padding: 0 69px;
-    margin-top: 108px
 }
 
 .contat-from-wrapper input[type="text"],
