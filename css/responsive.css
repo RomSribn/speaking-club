@@ -3,9 +3,45 @@
         width: 500px !important;
     }
 }
+@media (max-width: 1024px) {
 
+    main[role="main-home"] article[role="pge-title-content"] header,
+    main[role="main-inner-wrapper"] article[role="pge-title-content"] header{
+        padding-top: 0 !important;
+    }
+    video{
+        width: 100%;
+        height: auto;
+    }
+    main[role="main-home"] article[role="pge-title-content"],
+    main[role="main-inner-wrapper"] article[role="pge-title-content"]{
+        margin-bottom: 0px;
+    }
+    article[role="pge-title-content"].contact-header{
+        padding-bottom: 100px;
+    }
+}
 @media (max-width: 768px) {
     main[role="main-home"] .container .row .card{
         width: 100% !important;
     }
+    main[role="main-home"] article[role="pge-title-content"],
+    main[role="main-inner-wrapper"] article[role="pge-title-content"]{
+        margin-bottom: 0;
+    }
+    article[role="pge-title-content"].contact-header{
+        padding-bottom: 100px;
+    }
 }
+/*=========Mobile device L===========*/
+@media (max-width: 425px) {
+    main[role="main-home"] article[role="pge-title-content"],
+    main[role="main-inner-wrapper"] article[role="pge-title-content"]{
+        margin-bottom: 0;
+    }
+    article[role="pge-title-content"].contact-header{
+        padding-bottom: 0;
+    }
+
+}
+
