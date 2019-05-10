@@ -13,8 +13,15 @@ body{
 /*===== Header ===*/
 
 header[role="header"] {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    -moz-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    background-color: rgb(246, 246, 246);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 100;
 }
 
 header[role="header"] .container>div#logo {
@@ -80,7 +87,7 @@ header[role="header"] nav ul>li.nav-active a {
 }
 
 header[role="header"] nav #menu-button {
-    margin-top: 35px;
+    margin-top: 25px;
     width: 31px;
     font-size: 0;
     float: right;
@@ -156,7 +163,9 @@ header[role="header"] nav #menu-button.open span:nth-child(3) {
 /*===== main ===*/
 
 main[role="main-home"],
-main[role="main-inner-wrapper"] {
+main[role="main-about"],
+main[role="main-inner-wrapper"]{
+    padding-top: 80px;
     padding-bottom: 90px;
 }
 

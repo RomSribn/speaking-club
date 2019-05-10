@@ -3,12 +3,12 @@ const btn = navs.querySelector("#menu-button");
 const hidMenu = navs.querySelector("ul");
 
 console.log(hidMenu);
-
+console.log(btn);
 btn.addEventListener("click", handleClick);
 
 
-function handleClick() {
-
+function handleClick(evt) {
+console.log(evt);
     if(!this.classList.contains("open")){
         this.classList.add("open");
         hidMenu.classList.add("open");
