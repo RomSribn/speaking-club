@@ -22,6 +22,8 @@ header[role="header"] {
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 100;
+    transition: .3s;
+
 }
 
 header[role="header"] .container>div#logo {
@@ -163,12 +165,13 @@ header[role="header"] nav #menu-button.open span:nth-child(3) {
 /*===== main ===*/
 
 main[role="main-home"],
-main[role="main-about"],
 main[role="main-inner-wrapper"]{
     padding-top: 80px;
     padding-bottom: 90px;
 }
-
+main[role="main-about"]{
+    padding-top: 110px;
+}
 main[role="main-home"] article[role="pge-title-content"],
 main[role="main-inner-wrapper"] article[role="pge-title-content"] {
     padding-left: 41px;
